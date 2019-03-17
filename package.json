@@ -1,0 +1,16 @@
+{
+  "name": "language-eventusflow",
+  "version": "0.0.1",
+  "description": "An example language grammar package",
+  "repository": "https://github.com/csibidisp/tree_sitter_eventus.git",
+  "keywords": [
+    "syntax",
+    "highlighting",
+    "grammar"
+  ],
+  "license": "MIT",
+  "bugs": "https://github.com/csibidisp/tree_sitter_eventus/issues",
+  "engines": {
+    "atom": ">=1.0.0 <2.0.0"
+  }
+}
