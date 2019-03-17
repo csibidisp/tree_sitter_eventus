@@ -1,5 +1,5 @@
-scopeName: 'source.eventusflow'
-name: 'EventusFlow'
+scopeName: 'source.example'
+name: 'Example'
 fileTypes: [ 'exp' ]
 limitLineLength: false
 
@@ -7,6 +7,27 @@ patterns: [
   {
     comment: 'Use this to explain the function of the rule, if necessary'
     name: 'comment.line.example'
-    match: '//.*$'
+    match: '#.*$'
+  }
+  {
+    match: '(\\*)(.*?)(\\*)'
+    captures:
+      0: name: 'meta.bold.example'
+      1: name: 'punctuation.definition.bold.example'
+      2: name: 'markup.bold.example'
+      3: name: 'punctuation.definition.bold.example'
+  }
+  {
+    name: 'meta.section.example'
+    contentName: 'markup.other.section.example'
+    begin: '((\\\\)section)(\\{)'
+    beginCaptures:
+      1: name: 'support.function.section.example'
+      2: name: 'punctuation.definition.function.example'
+      3: name: 'punctuation.definition.begin.example'
+    end: '\\}'
+    endCaptures:
+      0: 'punctuation.definition.end.example'
+    patterns: [{ include: '$self' }]
   }
 ]
