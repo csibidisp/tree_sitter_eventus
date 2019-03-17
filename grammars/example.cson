@@ -9,16 +9,4 @@ patterns: [
     name: 'comment.line.example'
     match: '//.*$'
   }
-  {
-    match: '(\\*)(.*?)(\\*)'
-    captures:
-    0:
-      name: 'meta.bold.example'
-    1:
-      name: 'punctuation.definition.bold.example'
-    2:
-      name: 'markup.bold.example'
-    3:
-      name: 'punctuation.definition.bold.example'
-    }
 ]
