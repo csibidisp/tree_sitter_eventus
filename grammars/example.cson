@@ -4,9 +4,9 @@ fileTypes: [ 'exp' ]
 limitLineLength: false
 
 patterns: [
-{
-  comment: 'Use this to explain the function of the rule, if necessary'
-  name: 'comment.line.example'
-  match: '#.*$'
-}
+  {
+    comment: 'Use this to explain the function of the rule, if necessary'
+    name: 'comment.line.example'
+    match: '#.*$'
+  }
 ]
