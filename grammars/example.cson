@@ -1,5 +1,5 @@
-scopeName: 'source.example'
-name: 'Example'
+scopeName: 'source.eventusflow'
+name: 'EventusFlow'
 fileTypes: [ 'exp' ]
 limitLineLength: false
 
